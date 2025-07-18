@@ -9,7 +9,10 @@ const cors = require('cors')
 
 dotenv.config()
 db();
-app.use(cors());
+app.use(cors({
+  origin: ["https://smarthr-zeta.vercel.app/", "http://localhost:3000"], 
+  credentials: true,
+}));
 app.use(express.json())
 app.use('/api/auth', authRoutes)
 app.use('/api/employees', employeeRoutes);

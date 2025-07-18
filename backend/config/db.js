@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const connectDB = async()=>{
     try{
         const connextion = await mongoose.connect(process.env.MONGO_URI);
-        console.log(`Mongo DB connected successfully on port : ${connextion.connection.port}`)
+        console.log("Mongo DB connected successfully")
     }
     catch(error){
         console.error(`ERROR: ${error.message}`)

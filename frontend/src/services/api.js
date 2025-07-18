@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: 'https://smarthr-36g9.onrender.com',
+    baseURL: 'https://ems-final.onrender.com',
 });
 
 API.interceptors.request.use((req)=>{

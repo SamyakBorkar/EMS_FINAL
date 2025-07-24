@@ -15,9 +15,9 @@ app.use(cors({
 }));
 
 app.use(express.json())
-app.use('/api/auth', authRoutes)
-app.use('/api/employees', employeeRoutes);
-app.use('/api/tasks', taskRoutes)
+app.use('/', authRoutes)
+app.use('/', employeeRoutes);
+app.use('/', taskRoutes)
 app.get('/', (req,res)=>{
     res.cookie('name','samyak')
     res.send("API running")

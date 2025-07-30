@@ -10,14 +10,17 @@ const cors = require('cors')
 dotenv.config()
 db();
 app.use(cors({
-  origin: ["https://smarthr-zeta.vercel.app/"], 
+  origin: 'https://smarthr-zeta.vercel.app', 
   credentials: true,
 }));
-
+// app.use(cors({
+//   origin: 'http://localhost:5173',
+//   credentials: true,
+// }));
 app.use(express.json())
-app.use('/', authRoutes)
-app.use('/', employeeRoutes);
-app.use('/', taskRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/employees', employeeRoutes);
+app.use('/api/tasks', taskRoutes)
 app.get('/', (req,res)=>{
     res.cookie('name','samyak')
     res.send("API running")

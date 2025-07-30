@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: 'https://ems-final.onrender.com',
+    baseURL: 'https://ems-final.onrender.com/api',
+    // baseURL: 'http://localhost:5000/api',
     withCredentials: true,
 });
 

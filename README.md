@@ -25,7 +25,7 @@ A full-stack **Employee Management System (EMS)** built using the **MERN stack**
 - React.js (Vite)
 - Axios
 - React Router DOM
-- Tailwind CSS or Bootstrap *(your choice)*
+- Tailwind CSS 
 
 ### 📌 Backend
 - Node.js
@@ -37,8 +37,7 @@ A full-stack **Employee Management System (EMS)** built using the **MERN stack**
 ### 📌 DevOps / Deployment
 - Docker & Docker Compose
 - MongoDB Atlas
-- Railway / Vercel / Render *(optional)*
-
+- Railway / Vercel / Render 
 ---
 
 
